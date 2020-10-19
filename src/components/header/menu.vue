@@ -1,0 +1,230 @@
+<template>
+  <div class="menu">
+    <div class="background"></div>
+    <el-row type="flex" justify="space-between">
+      <el-col class="area" :span="10">
+        <i class="el-icon-location">{{$store.state.city}}</i>
+        <router-link :to="{name: 'changeCity'}">
+          <span class="changeCity">切换城市</span>
+        </router-link>[
+        <span>大厂回族自治县</span>
+        <span>香河</span>
+        <span>玉田县</span>
+        ]
+        <router-link class="regist" :to="{name:'login'}">立即登录</router-link>
+        <router-link class="login" :to="{name:'regist'}">注册</router-link>
+      </el-col>
+      <el-col class="nav" :span="8">
+        <ul>
+          <li>
+            <span>我的美团</span>
+            <dl>
+              <dd>
+                <span>我的订单</span>
+              </dd>
+              <dd>
+                <span>我的收藏</span>
+              </dd>
+              <dd>
+                <span>抵用券</span>
+              </dd>
+              <dd>
+                <span>账户设置</span>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <span>手机APP</span>
+          </li>
+          <li class="spe">
+            <span>商家中心</span>
+            <dl>
+              <dd>
+                <span>美团餐饮商户中心</span>
+              </dd>
+              <dd>
+                <span>登录商家中心</span>
+              </dd>
+              <dd>
+                <span>美团智能收银</span>
+              </dd>
+              <dd>
+                <span>我想合作</span>
+              </dd>
+              <dd>
+                <span>手机免费开店</span>
+              </dd>
+              <dd>
+                <span>餐饮代理商招募</span>
+              </dd>
+              <dd>
+                <span>商家申请开票</span>
+              </dd>
+              <dd>
+                <span>免费合作美团排队</span>
+              </dd>
+            </dl>
+          </li>
+          <li class="spe">
+            <span>美团规则</span>
+            <dl>
+              <dd>
+                <span>规则中心</span>
+              </dd>
+              <dd>
+                <span>规则目录</span>
+              </dd>
+              <dd>
+                <span>规则评议院</span>
+              </dd>
+            </dl>
+          </li>
+          <li class="spe">
+            <span>网站导航</span>
+            <div class="bigNav">
+              <dl>
+                <dt>酒店旅游</dt>
+                <dd>
+                  <span>国际机票</span>
+                </dd>
+                <dd>
+                  <span>火车票</span>
+                </dd>
+                <dd>
+                  <span>民宿</span>
+                </dd>
+                <dd>
+                  <span>经济型酒店</span>
+                </dd>
+                <dd>
+                  <span>主题酒店</span>
+                </dd>
+                <dd>
+                  <span>商务酒店</span>
+                </dd>
+                <dd>
+                  <span>公寓</span>
+                </dd>
+                <dd>
+                  <span>豪华酒店</span>
+                </dd>
+                <dd>
+                  <span>客栈</span>
+                </dd>
+                <dd>
+                  <span>亲年旅社</span>
+                </dd>
+                <dd>
+                  <span>度假酒店</span>
+                </dd>
+                <dd>
+                  <span>别墅</span>
+                </dd>
+                <dd>
+                  <span>农家院</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>吃美食</dt>
+                <dd>
+                  <span>烤鱼</span>
+                </dd>
+                <dd>
+                  <span>特色小吃</span>
+                </dd>
+                <dd>
+                  <span>烧烤</span>
+                </dd>
+                <dd>
+                  <span>自助餐</span>
+                </dd>
+                <dd>
+                  <span>火锅</span>
+                </dd>
+                <dd>
+                  <span>代金券</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>看电影</dt>
+                <dd>
+                  <span>热映电影</span>
+                </dd>
+                <dd>
+                  <span>热门影院</span>
+                </dd>
+                <dd>
+                  <span>热映电影口碑榜</span>
+                </dd>
+                <dd>
+                  <span>最受期待电影</span>
+                </dd>
+                <dd>
+                  <span>国内票房榜</span>
+                </dd>
+                <dd>
+                  <span>北美票房榜</span>
+                </dd>
+                <dd>
+                  <span>电影排行榜</span>
+                </dd>
+              </dl>
+              <dl>
+                <dt>手机应用</dt>
+                <dd>
+                  <img
+                    class="appicon"
+                    src="//s0.meituan.net/bs/fe-web-meituan/2d53095/img/appicons/meituan.png"
+                    title="美团app"
+                    alt="美团app"
+                  />
+                </dd>
+                <dd>
+                  <img
+                    class="appicon"
+                    src="//s1.meituan.net/bs/fe-web-meituan/404d350/img/appicons/waimai.png"
+                    title="外卖app"
+                    alt="外卖app"
+                  />
+                </dd>
+                <dd>
+                  <img
+                    class="appicon"
+                    src="https://p0.meituan.net/travelcube/162c3308d9622f6d9cfaa49e60be4dca8573.png"
+                    title="民宿app"
+                    alt="民宿app"
+                  />
+                </dd>
+                <dd>
+                  <img
+                    class="appicon"
+                    src="//s1.meituan.net/bs/fe-web-meituan/404d350/img/appicons/dianping.png"
+                    title="点评app"
+                    alt="点评app"
+                  />
+                </dd>
+                <dd>
+                  <img
+                    class="appicon"
+                    src="//s1.meituan.net/bs/fe-web-meituan/404d350/img/appicons/maoyan.png"
+                    title="猫眼app"
+                    alt="猫眼app"
+                  />
+                </dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </el-col>
+    </el-row>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style scoped lang='scss'>
+@import "@/assets/css/public/var.scss";
+@import "@/assets/css/public/header.scss";
+</style>
